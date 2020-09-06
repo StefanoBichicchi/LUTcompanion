@@ -2,6 +2,7 @@
   "left_menu": {
     "title": "Naviga",
     "home": "Home",
+    "party": "Gruppo",
     "tracking": "Iniziativa",
     "settings": "Opzioni"
   },
@@ -37,6 +38,20 @@
       "match_won": "Hai vinto lo scontro!",
       "match_lose": "Hai perso lo scontro",
       "not_enough": "Non ci sono abbastanza personaggi per lo scontro!"
+    }
+  },
+  "settings_page": {
+    "title": "Opzioni",
+    "theme": {
+      "name": "Tema",
+      "types": {
+        "auto": "In base al sistema",
+        "on": "Scuro",
+        "off": "Chiaro"
+      }
+    },
+    "language": {
+      "italian": "Italiano"
     }
   }
 }
