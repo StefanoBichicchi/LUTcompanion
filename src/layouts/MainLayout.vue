@@ -4,9 +4,7 @@
       <q-bar class="q-electron-drag">
         <q-btn dense flat round icon="menu" @click="left = !left" />
 
-        <div>
-          LUTCompanion
-        </div>
+        <div>LUTCompanion</div>
 
         <q-space />
 
@@ -35,9 +33,7 @@
               <q-item-section avatar>
                 <q-icon :name="menuItem.icon" />
               </q-item-section>
-              <q-item-section>
-                {{ menuItem.label }}
-              </q-item-section>
+              <q-item-section>{{ menuItem.label }}</q-item-section>
             </q-item>
             <q-separator :key="'sep' + index" v-if="menuItem.separator" />
           </template>
@@ -61,21 +57,21 @@ export default {
           icon: "home",
           label: this.$t("left_menu.home"),
           separator: false,
-          to: "/"
+          to: "/",
         },
         {
           icon: "fas fa-list-ol",
           label: this.$t("left_menu.tracking"),
           separator: true,
-          to: "Tracking"
+          to: "Tracking",
         },
         {
           icon: "settings",
           label: this.$t("left_menu.settings"),
           separator: false,
-          to: "Settings"
-        }
-      ]
+          to: "Settings",
+        },
+      ],
     };
   },
 
@@ -83,17 +79,17 @@ export default {
     themeIcon() {
       if (this.$q.dark.isActive) return "fas fa-sun";
       else return "fas fa-moon";
-    }
+    },
   },
 
   methods: {
-    minimize: function() {
+    minimize: function () {
       if (process.env.MODE === "electron") {
         this.$q.electron.remote.BrowserWindow.getFocusedWindow().minimize();
       }
     },
 
-    maximize: function() {
+    maximize: function () {
       if (process.env.MODE === "electron") {
         const win = this.$q.electron.remote.BrowserWindow.getFocusedWindow();
 
@@ -105,7 +101,7 @@ export default {
       }
     },
 
-    close: function() {
+    close: function () {
       if (process.env.MODE === "electron") {
         const window = this.$q.electron.remote.BrowserWindow.getFocusedWindow();
         window.close();
@@ -115,7 +111,7 @@ export default {
 
     toggleDarkMode() {
       this.$q.dark.toggle();
-    }
-  }
+    },
+  },
 };
 </script>
