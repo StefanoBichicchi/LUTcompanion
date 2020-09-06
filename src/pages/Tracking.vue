@@ -138,6 +138,7 @@
         <q-select
           outlined
           filled
+          emit-value
           :label="$t('tracking_page.hp.target')"
           :options="targets"
           v-model="attack.target"
@@ -258,7 +259,7 @@ export default {
     },
 
     addHP() {
-      let index = this.attack.target.value;
+      let index = this.attack.target;
       this.players[index].HP += this.attack.floatingHP;
       if (this.players[index].HP > this.players[index].totalHP)
         this.players[index].HP = this.players[index].totalHP;
@@ -267,7 +268,7 @@ export default {
     },
 
     removeHP() {
-      this.players[this.attack.target.value].HP -= this.attack.floatingHP;
+      this.players[this.attack.target].HP -= this.attack.floatingHP;
       this.attack.floatingHP = null;
       this.attack.target = null;
       this.watchMatch();
