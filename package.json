@@ -1,13 +1,15 @@
 {
-  "name": "dm_companion",
+  "name": "lut_companion",
   "version": "0.0.1",
-  "description": "A Dungeon Master's companion",
-  "productName": "DMCompanion",
+  "description": "A Dungeon Master's companion for L'Ultima Torcia",
+  "productName": "LUTCompanion",
   "author": "StefanoBichicchi <bichicchi.stefano@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "dev:web": "quasar dev",
+    "dev:electron": "quasar dev -m electron"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
