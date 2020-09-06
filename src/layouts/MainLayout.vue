@@ -60,6 +60,12 @@ export default {
           to: "/",
         },
         {
+          icon: "group",
+          label: this.$t("left_menu.party"),
+          separator: false,
+          to: "Party",
+        },
+        {
           icon: "fas fa-list-ol",
           label: this.$t("left_menu.tracking"),
           separator: true,
