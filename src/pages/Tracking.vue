@@ -1,5 +1,9 @@
 <template>
   <q-page class="fit row wrap justify-center items-start content-between">
+    <q-toolbar class="bg-secondary text-white col-12">
+      <q-toolbar-title>{{ this.$t("tracking_page.title") }}</q-toolbar-title>
+    </q-toolbar>
+
     <!-- Left column -->
 
     <div class="col-4 q-gutter-md self-start q-pa-md">

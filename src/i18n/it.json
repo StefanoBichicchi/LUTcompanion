@@ -9,7 +9,11 @@
   "home_page": {
     "welcome_msg": "Benvenuto in LUTCompanion!"
   },
+  "group_page": {
+    "title": "Gestione gruppi"
+  },
   "tracking_page": {
+    "title": "Iniziativa",
     "initiative": {
       "title": "Ordine iniziativa",
       "delete_me": "Elimina",
