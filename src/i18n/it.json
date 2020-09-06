@@ -1,0 +1,42 @@
+{
+  "left_menu": {
+    "title": "Naviga",
+    "home": "Home",
+    "tracking": "Iniziativa",
+    "settings": "Opzioni"
+  },
+  "home_page": {
+    "welcome_msg": "Benvenuto in LUTCompanion!"
+  },
+  "tracking_page": {
+    "initiative": {
+      "title": "Ordine iniziativa",
+      "delete_me": "Elimina",
+      "delete_all": "Pulisci",
+      "next": "Prossimo"
+    },
+    "info": {
+      "title": "Inserisci personaggio",
+      "name": "Nome",
+      "roll": "Tiro iniziativa",
+      "hp": "Punti salute",
+      "enemy": "Nemico?",
+      "insert": "Aggiungi",
+      "start": "Inizia scontro",
+      "stop": "Termina scontro"
+    },
+    "hp": {
+      "title": "Gestione Punti Salute",
+      "current_character": "Personaggio attivo",
+      "target": "Obiettivo",
+      "hp": "Punti salute",
+      "add_hp": "Aggiungi PS",
+      "remove_hp": "Togli PS"
+    },
+    "notify": {
+      "match_won": "Hai vinto lo scontro!",
+      "match_lose": "Hai perso lo scontro",
+      "not_enough": "Non ci sono abbastanza personaggi per lo scontro!"
+    }
+  }
+}
