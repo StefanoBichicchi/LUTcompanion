@@ -1,4 +1,4 @@
-# LUTCompanion (dm_companion)
+# LUTCompanion (lut_companion)
 
 A Dungeon Master's companion for L'Ultima Torcia
 
